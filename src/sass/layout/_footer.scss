@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.footer {
+  background: var(--color-primary-light);
+  padding: var(--p-5) 0;
+
+  &__connect {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      align-self: start;
+
+      &:not(:last-child) {
+        margin-bottom: var(--m-2);
+      }
+    }
+  }
+
+  &__made-by {
+    display: flex;
+    align-items: baseline;
+
+    & > * {
+      &:not(:last-child) {
+        margin-right: var(--m-1);
+      }
+    }
+  }
+}

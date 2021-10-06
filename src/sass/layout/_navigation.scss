@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__list {
+    display: flex;
+
+    & > * {
+      &:not(:last-of-type) {
+        margin-right: 4rem;
+      }
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

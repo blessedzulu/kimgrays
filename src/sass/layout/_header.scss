@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.header {
+  margin: 2rem 4rem 0;
+
+  @include respond("laptop") {
+    margin: 2rem 8rem 0;
+  }
+}

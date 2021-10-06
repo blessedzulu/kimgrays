@@ -1,0 +1,26 @@
+// ? MEDIA QUERIES
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media only screen and (min-width: 36em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 49em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 63em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 76em) {
+      @content;
+    }
+  }
+}

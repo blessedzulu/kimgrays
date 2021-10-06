@@ -1,0 +1,38 @@
+.quote {
+  & .citation {
+    display: flex;
+    align-items: center;
+
+    &__image-container {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: var(--m-3);
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "\201C";
+      display: inline-block;
+      position: absolute;
+      left: -4rem;
+      top: -6rem;
+      z-index: -1;
+      font-family: "Petrona";
+      font-size: 24rem;
+      color: var(--color-primary-light);
+      opacity: 0.5;
+    }
+  }
+}

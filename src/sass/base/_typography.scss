@@ -1,0 +1,82 @@
+@use "../abstracts/" as *;
+
+// @font-face {
+//   font-family: "Acari Sans";
+//   src: url("../assets/fonts/AcariSans-Regular.woff") format("woff");
+//   font-weight: 400;
+// }
+
+body {
+  font-family: "Petrona", sans-serif; // ! DEV
+  font-size: var(--fz-2);
+  color: var(--color-dark);
+}
+
+.text {
+  &--1 {
+    font-size: var(--fz-1);
+  }
+  &--2 {
+    font-size: var(--fz-2);
+  }
+  &--3 {
+    font-size: var(--fz-3);
+  }
+  &--4 {
+    font-size: var(--fz-4);
+  }
+  &--5 {
+    font-size: var(--fz-5);
+  }
+  &--6 {
+    font-size: var(--fz-6);
+  }
+  &--7 {
+    font-size: var(--fz-7);
+  }
+
+  &--display {
+    font-family: "Mazius Review 20.09";
+  }
+
+  &--sb {
+    font-weight: var(--fw-semibold);
+
+    &:link,
+    &:visited {
+      font-weight: var(--fw-semibold);
+    }
+  }
+
+  &--rg {
+    font-weight: var(--fw-regular);
+  }
+
+  &--highlight {
+    font-family: "Mazius Review 20.09 Extra";
+    color: var(--color-primary);
+  }
+
+  &--ribbon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      line-height: 0;
+      height: 1px;
+      width: 30%;
+      background: var(--color-primary);
+    }
+
+    &::before {
+      content: "\00ab";
+    }
+
+    &::after {
+      content: "\00bb";
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "kimgrays",
+  "version": "1.0.0",
+  "description": "Website for KimGray's Creations",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "scripts": {
+    "start": "parcel serve src/index.html --open",
+    "build": "parcel build src/index.html --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blessedzulu/kimgrays.git"
+  },
+  "keywords": [
+    "website",
+    "business",
+    "business website"
+  ],
+  "author": "Blessed Zulu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blessedzulu/kimgrays/issues"
+  },
+  "homepage": "https://kimgrays.netlify.app"
+}
