@@ -13,43 +13,40 @@
   &__label {
     display: inline-block;
     margin-bottom: var(--m-2);
-    text-transform: uppercase;
     font-weight: var(--fw-semibold);
   }
 
-  &__input {
+  &__input,
+  & select {
     display: inline-block;
     width: 100%;
     padding: 1.5rem 2rem;
-    border: 2px solid var(--color-placeholder);
+    border: 1px solid var(--color-primary);
     font-size: inherit;
     font-family: inherit;
-    background: var(--color-white);
-    color: var(--color-black);
-    transition: all 0.25s var(--easing);
+    background: var(--color-bg);
+    color: var(--color-dark);
+    transition: all 0.15s var(--easing);
 
     &:hover {
-      border-color: rgba(var(--rgb-black), 0.5);
+      background: var(--color-light);
     }
 
     &:focus {
-      background: var(--color-white);
+      background: var(--color-light);
       outline: none;
-      border: 2px solid var(--color-black);
     }
 
     &::placeholder {
-      color: var(--color-placeholder);
+      color: #8a7c6c;
+      font-size: 1.6rem;
     }
+  }
+
+  & select {
   }
 
   & textarea {
     resize: vertical;
-  }
-
-  & .btn {
-    @include respond("tablet") {
-      align-self: flex-end;
-    }
   }
 }

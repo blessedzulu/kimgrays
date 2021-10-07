@@ -159,6 +159,14 @@
   flex-direction: column;
 }
 
+.u-flex {
+  display: flex;
+}
+
+.u-flex-align-start {
+  align-self: start;
+}
+
 // ? Visibility
 .u-hidden {
   opacity: 0;
@@ -168,4 +176,8 @@
 // ? Width
 .u-w-50 {
   width: 50% !important;
+}
+
+.u-w-70 {
+  width: 70% !important;
 }
