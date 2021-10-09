@@ -1,13 +1,39 @@
 @use "../abstracts/" as *;
 
-// @font-face {
-//   font-family: "Acari Sans";
-//   src: url("../assets/fonts/AcariSans-Regular.woff") format("woff");
-//   font-weight: 400;
-// }
+@font-face {
+  font-family: "Mazius Review 20.09";
+  src: url("../assets/fonts/MaziusReview.woff") format("woff"),
+    url("../assets/fonts/MaziusReview.woff2") format("woff2"),
+    url("../assets/fonts/MaziusReview.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mazius Review 20.09 Extra";
+  src: url("../assets/fonts/MaziusReviewExtra.woff") format("woff"),
+    url("../assets/fonts/MaziusReviewExtra.woff2") format("woff2"),
+    url("../assets/fonts/MaziusReviewExtra.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Petrona";
+  src: url("../assets/fonts/Petrona.woff") format("woff"),
+    url("../assets/fonts/Petrona.woff2") format("woff2"),
+    url("../assets/fonts/Petrona.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Petrona";
+  src: url("../assets/fonts/PetronaSemiBold.woff") format("woff"),
+    url("../assets/fonts/PetronaSemiBold.woff2") format("woff2"),
+    url("../assets/fonts/PetronaSemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
 
 body {
-  font-family: "Petrona", sans-serif; // ! DEV
+  font-family: "Petrona", sans-serif;
   font-size: var(--fz-2);
   color: var(--color-dark);
 }

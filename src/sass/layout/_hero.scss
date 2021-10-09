@@ -2,7 +2,7 @@
 
 .hero {
   &--home {
-    min-width: 100vh;
+    min-height: 100vh;
   }
 
   &__right--home {
@@ -14,10 +14,10 @@
   }
 
   &__img-container {
+    height: 0;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--color-primary-light);
     pointer-events: none;
 
     &--1 {
