@@ -5,17 +5,49 @@
     min-width: 100vh;
   }
 
+  &__right--home {
+    position: relative;
+
+    @include respond("laptop") {
+      margin-top: -5rem;
+    }
+  }
+
   &__img-container {
-    width: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary-light);
+    pointer-events: none;
 
     &--1 {
-      padding-bottom: calc(20rem / 16 * 9);
+      top: 0;
+      left: 5rem;
+      width: 10vw;
+      padding-bottom: calc((4 / 3) * 10vw);
+    }
+
+    &--2 {
+      top: 10rem;
+      left: 15rem;
+      width: 12.5vw;
+      padding-bottom: calc((4 / 3) * 12.5vw);
+    }
+
+    &--3 {
+      top: 20rem;
+      left: 0rem;
+      width: 15vw;
+      padding-bottom: calc((4 / 3) * 15vw);
     }
   }
 
   &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: center;
   }

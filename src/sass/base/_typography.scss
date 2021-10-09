@@ -64,19 +64,12 @@ body {
 
     &::before,
     &::after {
+      content: "";
       display: inline-block;
       line-height: 0;
       height: 1px;
       width: 30%;
       background: var(--color-primary);
-    }
-
-    &::before {
-      content: "\00ab";
-    }
-
-    &::after {
-      content: "\00bb";
     }
   }
 }
