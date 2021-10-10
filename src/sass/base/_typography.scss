@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: "Petrona", sans-serif;
+  font-family: "Petrona", serif;
   font-size: var(--fz-2);
   color: var(--color-dark);
 }
@@ -62,7 +62,7 @@ body {
   }
 
   &--display {
-    font-family: "Mazius Review 20.09";
+    font-family: "Mazius Review 20.09", serif;
   }
 
   &--sb {
@@ -79,7 +79,7 @@ body {
   }
 
   &--highlight {
-    font-family: "Mazius Review 20.09 Extra";
+    font-family: "Mazius Review 20.09 Extra", serif;
     color: var(--color-primary);
   }
 
