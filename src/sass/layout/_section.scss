@@ -6,14 +6,5 @@ section {
 
 .section {
   &--about {
-    margin-top: 25rem;
-
-    @include respond("tablet") {
-      margin-top: 35rem;
-    }
-
-    @include respond("laptop") {
-      margin-top: 0;
-    }
   }
 }
