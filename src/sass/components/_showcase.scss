@@ -2,10 +2,10 @@
 
 .showcase {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 15vw);
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 
   &__item {
     &--1 {

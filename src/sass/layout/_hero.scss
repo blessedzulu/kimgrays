@@ -7,6 +7,7 @@
 
   &__right--home {
     position: relative;
+    margin-top: 5rem;
 
     @include respond("laptop") {
       margin-top: -5rem;
@@ -21,24 +22,47 @@
     pointer-events: none;
 
     &--1 {
-      top: 0;
-      left: 5rem;
-      width: 10vw;
-      padding-bottom: calc((4 / 3) * 10vw);
+      top: 2.5rem;
+      left: 0;
+      width: 30vw;
+      padding-bottom: calc((4 / 3) * 30vw);
     }
 
     &--2 {
-      top: 10rem;
-      left: 15rem;
-      width: 12.5vw;
-      padding-bottom: calc((4 / 3) * 12.5vw);
+      top: 0;
+      left: 25vw;
+      width: 35vw;
+      padding-bottom: calc((4 / 3) * 35vw);
     }
 
     &--3 {
-      top: 20rem;
-      left: 0rem;
-      width: 15vw;
-      padding-bottom: calc((4 / 3) * 15vw);
+      top: 2.5rem;
+      left: 55vw;
+      width: 30vw;
+      padding-bottom: calc((4 / 3) * 30vw);
+    }
+
+    @include respond("laptop") {
+      &--1 {
+        top: 0;
+        left: 5rem;
+        width: 10vw;
+        padding-bottom: calc((4 / 3) * 10vw);
+      }
+
+      &--2 {
+        top: 10rem;
+        left: 15rem;
+        width: 12.5vw;
+        padding-bottom: calc((4 / 3) * 12.5vw);
+      }
+
+      &--3 {
+        top: 20rem;
+        left: 0rem;
+        width: 15vw;
+        padding-bottom: calc((4 / 3) * 15vw);
+      }
     }
   }
 

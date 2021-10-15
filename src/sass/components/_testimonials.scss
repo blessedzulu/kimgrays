@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.testimonials {
+  &__list {
+    &--right {
+      @include respond("laptop") {
+        margin-top: var(--m-6);
+      }
+    }
+  }
+}

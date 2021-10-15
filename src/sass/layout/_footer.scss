@@ -4,6 +4,14 @@
   background: var(--color-primary-light);
   padding: var(--p-5) 0;
 
+  &__quotation {
+    margin-bottom: var(--m-4);
+
+    @include respond("laptop") {
+      margin-bottom: 0;
+    }
+  }
+
   &__connect {
     display: flex;
     flex-direction: column;

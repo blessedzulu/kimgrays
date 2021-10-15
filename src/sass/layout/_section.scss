@@ -1,1 +1,15 @@
 @use "../abstracts/" as *;
+
+section {
+  scroll-behavior: smooth;
+}
+
+.section {
+  &--about {
+    margin-top: 60vw;
+
+    @include respond("laptop") {
+      margin-top: 0;
+    }
+  }
+}

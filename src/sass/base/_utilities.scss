@@ -19,13 +19,25 @@
   margin-bottom: var(--m-4) !important;
 }
 .u-mb-5 {
-  margin-bottom: var(--m-5) !important;
+  margin-bottom: var(--m-4) !important;
+
+  @include respond("laptop") {
+    margin-bottom: var(--m-5) !important;
+  }
 }
 .u-mb-6 {
-  margin-bottom: var(--m-6) !important;
+  margin-bottom: var(--m-5) !important;
+
+  @include respond("laptop") {
+    margin-bottom: var(--m-6) !important;
+  }
 }
 .u-mb-7 {
-  margin-bottom: var(--m-7) !important;
+  margin-bottom: var(--m-6) !important;
+
+  @include respond("laptop") {
+    margin-bottom: var(--m-7) !important;
+  }
 }
 .u-mt-1 {
   margin-top: var(--m-1) !important;
@@ -136,7 +148,11 @@
   padding-right: var(--m-5) !important;
 }
 .u-pr-6 {
-  padding-right: var(--m-6) !important;
+  padding-right: 0;
+
+  @include respond("laptop") {
+    padding-right: var(--m-6) !important;
+  }
 }
 .u-pr-7 {
   padding-right: var(--m-7) !important;
