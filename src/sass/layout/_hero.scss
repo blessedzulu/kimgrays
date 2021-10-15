@@ -2,7 +2,9 @@
 
 .hero {
   &--home {
-    min-height: 100vh;
+    @include respond("laptop") {
+      min-height: 100vh;
+    }
   }
 
   &__right--home {
