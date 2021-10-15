@@ -33,7 +33,7 @@
   }
 }
 .u-mb-7 {
-  margin-bottom: var(--m-6) !important;
+  margin-bottom: 16rem !important;
 
   @include respond("laptop") {
     margin-bottom: var(--m-7) !important;
