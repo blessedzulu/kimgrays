@@ -3,7 +3,7 @@
 .hero {
   &--home {
     min-height: 100vh;
-    margin-bottom: 20vw;
+    margin-bottom: 15vw;
 
     @include respond("laptop") {
       margin-bottom: 0;
