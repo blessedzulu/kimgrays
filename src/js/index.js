@@ -43,7 +43,6 @@ const animations = {
   },
   fadeIn(el, duration) {
     return gsap.from(el, {
-      scale: 0.9,
       autoAlpha: 0,
       duration,
       ease: "power2.out",
@@ -56,6 +55,28 @@ const animations = {
       scrollTrigger: {
         trigger: el,
         start: "top center+=200",
+      },
+    });
+  },
+  tiltImg(img, xPos, yPos, i) {
+    gsap.to(img, {
+      duration: 2,
+      ease: "power2.out",
+      x: -xPos * 50 * (i + 0.5),
+      y: -yPos * 50 * (i + 0.5),
+      rotationY: xPos * 20,
+      rotationX: yPos * 10,
+    });
+  },
+  animHeaderBg(el, elTrigger) {
+    gsap.to(el, {
+      scrollTrigger: {
+        trigger: elTrigger,
+        start: 200,
+        toggleClass: {
+          targets: el,
+          className: "has-scrolled",
+        },
       },
     });
   },
@@ -94,31 +115,15 @@ const tiltImages = (e) => {
   const yPos = offsetY / clientHeight - 0.5;
 
   [...heroImgs].forEach((img, i) => {
-    gsap.to(img, {
-      duration: 2,
-      ease: "power2.out",
-      x: -xPos * 50 * (i + 0.5),
-      y: -yPos * 50 * (i + 0.5),
-      rotationY: xPos * 20,
-      rotationX: yPos * 10,
-    });
+    animations.tiltImg(img, xPos, yPos, i);
   });
 };
 
-const colorHeader = () => {
+const animHeaderBg = () => {
   const header = document.querySelector(".header");
   const body = document.querySelector("body");
 
-  gsap.to(header, {
-    scrollTrigger: {
-      trigger: body,
-      start: 200,
-      toggleClass: {
-        targets: header,
-        className: "has-scrolled",
-      },
-    },
-  });
+  animations.animHeaderBg(header, body);
 };
 
 const animHeroImgs = () => {
@@ -163,13 +168,12 @@ const init = () => {
   animRibbons();
   animSectionHeaders();
   animFooterContent();
-  colorHeader();
+  animHeroImgs();
+  animHeaderBg();
 };
 
 window.addEventListener("DOMContentLoaded", init);
 
 // todo: Tomorrow todo list
 // task: 1. Add loading screen
-// task: 2. Add site animations
 // task: 3. Add small screen nav menu
-// task: 4. Make header sticky
