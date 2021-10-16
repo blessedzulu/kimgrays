@@ -65,7 +65,7 @@ const animations = {
       x: -xPos * 50 * (i + 0.5),
       y: -yPos * 50 * (i + 0.5),
       rotationY: xPos * 20,
-      rotationX: yPos * 10,
+      rotationX: yPos * 40,
     });
   },
   animHeaderBg(el, elTrigger) {
