@@ -8,6 +8,8 @@
   padding: 0 1rem;
 
   &__item {
+    overflow: hidden;
+
     &--1 {
       grid-area: 1 / 1 / span 2 / span 2;
     }
@@ -42,5 +44,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.5s var(--easing);
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }

@@ -3,7 +3,7 @@
 .testimonials {
   &__list {
     &--right {
-      margin-top: 4rem;
+      margin-top: 3rem;
 
       @include respond("laptop") {
         margin-top: var(--m-6);

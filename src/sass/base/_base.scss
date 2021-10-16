@@ -4,6 +4,8 @@
 :root {
   // ? Colors
   --rgb-primary: 216, 145, 22;
+  --rgb-bg: 255, 247, 236;
+  --rgb-light: 255, 245, 204;
 
   --color-black: #000;
   --color-white: #fff;
@@ -81,6 +83,7 @@ html {
 
 body {
   background: var(--color-bg);
+  overflow-x: hidden;
 }
 
 ul,

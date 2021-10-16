@@ -1,9 +1,22 @@
 @use "../abstracts/" as *;
 
 .header {
-  margin: 2rem 4rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 2rem;
+
+  transition: all 0.5s var(--easing);
 
   @include respond("laptop") {
-    margin: 2rem 8rem 0;
+    padding: 1rem 4rem;
+  }
+
+  &.has-scrolled {
+    // background: var(--color-light);
+    background: rgba(var(--rgb-light), 0.75);
+    backdrop-filter: blur(5px);
   }
 }

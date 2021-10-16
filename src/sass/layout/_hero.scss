@@ -4,6 +4,7 @@
   &--home {
     min-height: 100vh;
     margin-bottom: 15vw;
+    perspective: 100rem;
 
     @include respond("laptop") {
       margin-bottom: 0;
@@ -15,6 +16,14 @@
 
     @include respond("laptop") {
       margin-bottom: 0;
+    }
+
+    h1 {
+      pointer-events: none;
+    }
+
+    p {
+      pointer-events: none;
     }
   }
 
