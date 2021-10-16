@@ -22,9 +22,8 @@
   },
   "homepage": "https://kimgrays.netlify.app",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "^2.0.0"
   },
   "dependencies": {
     "gsap": "^3.8.0"
