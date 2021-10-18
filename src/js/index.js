@@ -177,3 +177,8 @@ window.addEventListener("DOMContentLoaded", init);
 // todo: Tomorrow todo list
 // task: 1. Add loading screen
 // task: 3. Add small screen nav menu
+// fixme: Testing
+// ~
+// ^
+// &
+// *
