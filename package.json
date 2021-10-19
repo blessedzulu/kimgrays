@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website for KimGray's Creations",
   "scripts": {
-    "start": "parcel serve src/index.html --open",
+    "start": "parcel src/index.html --open",
     "build": "parcel build src/index.html --no-source-maps"
   },
   "repository": {
@@ -17,6 +17,7 @@
   ],
   "author": "Blessed Zulu",
   "license": "ISC",
+  "browserslist": ">1%, last 5 versions, not dead",
   "bugs": {
     "url": "https://github.com/blessedzulu/kimgrays/issues"
   },
