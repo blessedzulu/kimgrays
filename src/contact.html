@@ -103,27 +103,30 @@
             <div class="row center-xs middle-lg">
 
               <div class="col col-xs-12 col-lg-7">
-                <form class="form form--contact" netlify name="contact">
+                <form class="form form--contact" netlify name="contact" enctype="multipart/form-data">
                   <div class="form__group">
                     <label for="name" class="form__label form__label--required">Name</label>
-                    <input type="text" id="name" class="form__input" placeholder="What's your name?" required>
+                    <input type="text" name="client-name" id="name" class="form__input" placeholder="What's your name?"
+                      required>
                   </div>
 
                   <div class="form__group">
-                    <label for="phone-email" class="form__label form__label--required">Phone or Email</label>
-                    <input type="text" id="phone-email" class="form__input" placeholder="How can we contact you?"
-                      required>
+                    <label for="phone-or-email" class="form__label form__label--required">Phone or
+                      Email</label>
+                    <input type="text" name="phone-email" id="phone-email" class="form__input"
+                      placeholder="How can we contact you?" required>
                   </div>
 
                   <div class="form__group">
                     <label for="event" class="form__label form__label--required">Event Type</label>
-                    <input type="text" id="event" class="form__input" placeholder="eg., Birthday party" required>
+                    <input type="text" id="event" name="event-type" class="form__input"
+                      placeholder="eg., Birthday party" required>
                   </div>
 
                   <div class="form__group">
                     <label for="service" class="form__label form__label--required">Desired Service</label>
-                    <select name="service" id="service" class="form__select" placeholder="What can we do for you?"
-                      required>
+                    <select name="deired-service" id="service" class="form__select"
+                      placeholder="What can we do for you?" required>
                       <option value="catering">Catering</option>
                       <option value="decoration">Decoration</option>
                       <option value="catering-decoration">Catering & decoration</option>
@@ -132,26 +135,27 @@
 
                   <div class="form__group">
                     <label for="date" class="form__label">Event Date</label>
-                    <input type="date" id="date" class="form__input">
+                    <input type="date" name="event-date" id="date" class="form__input">
                   </div>
 
                   <div class="form__group">
                     <label for="location" class="form__label form__label--required">Location</label>
-                    <input type="text" id="location" class="form__input" placeholder="eg., Chingola" required>
+                    <input type="text" name="event-location" id="location" class="form__input"
+                      placeholder="eg., Chingola" required>
                   </div>
 
                   <div class="form__group">
                     <label for="guests" class="form__label form__label--required">Number of Guests</label>
-                    <select name="guests" id="guests" class="form__select" required>
-                      <option value="less-50">Less than 50</option>
+                    <select name="number-of-guests" id="guests" class="form__select" required>
+                      <option value="less-than-50">Less than 50</option>
                       <option value="50-to-100">Between 50 and 100</option>
-                      <option value="greater-100">More than 100</option>
+                      <option value="greater-than-100">More than 100</option>
                     </select>
                   </div>
 
                   <div class="form__group">
-                    <label for="more-info" class="form__label">Extra Information</label>
-                    <textarea name="more-info" id="more-info" class="form__input u-mb-3" rows="10"
+                    <label for="extra-info" class="form__label">Extra Information</label>
+                    <textarea name="extra-info" id="more-info" class="form__input u-mb-3" rows="10"
                       placeholder="Is there anything else we should know?"></textarea>
 
                     <p class="text text--1 text--rg">
