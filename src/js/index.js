@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import jump from "jump.js";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ ease: "power4.out", duration: 1 });
@@ -79,6 +80,9 @@ const animations = {
         },
       },
     });
+  },
+  jumpTo(target) {
+    jump(target, { duration: 500, offset: -100 });
   },
 };
 
@@ -160,6 +164,23 @@ const animFooterContent = () => {
   animations.fadeInLeftStagger(els, ".footer", 0.25);
 };
 
+const animJumpToSection = () => {
+  const linkAbout = document.querySelector(".nav__link--about");
+  const linkServices = document.querySelector(".nav__link--services");
+
+  if (!linkServices || !linkAbout) return;
+
+  linkAbout.addEventListener("click", (e) => {
+    e.preventDefault();
+    animations.jumpTo(".section--about");
+  });
+
+  linkServices.addEventListener("click", (e) => {
+    e.preventDefault();
+    animations.jumpTo(".section--services");
+  });
+};
+
 const init = () => {
   animContent();
   animTestimonials();
@@ -170,6 +191,7 @@ const init = () => {
   animFooterContent();
   animHeroImgs();
   animHeaderBg();
+  animJumpToSection();
 };
 
 window.addEventListener("DOMContentLoaded", init);
