@@ -6,6 +6,7 @@
     url("../assets/fonts/MaziusReview.woff2") format("woff2"),
     url("../assets/fonts/MaziusReview.otf") format("opentype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
     url("../assets/fonts/MaziusReviewExtra.woff2") format("woff2"),
     url("../assets/fonts/MaziusReviewExtra.otf") format("opentype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
     url("../assets/fonts/Petrona.woff2") format("woff2"),
     url("../assets/fonts/Petrona.ttf") format("truetype");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -30,10 +33,11 @@
     url("../assets/fonts/PetronaSemiBold.woff2") format("woff2"),
     url("../assets/fonts/PetronaSemiBold.ttf") format("truetype");
   font-weight: 600;
+  font-display: swap;
 }
 
 body {
-  font-family: "Petrona", serif;
+  font-family: "Petrona", Georgia, serif;
   font-size: var(--fz-2);
   color: var(--color-dark);
 }
