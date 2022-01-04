@@ -2,20 +2,6 @@
   & .citation {
     display: flex;
     align-items: center;
-
-    &__image-container {
-      width: 7rem;
-      height: 7rem;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-right: var(--m-3);
-    }
-
-    &__image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 
   &__text {
